@@ -1,0 +1,46 @@
+{
+  "name": "google-keep-nativefied",
+  "version": "1.0.0",
+  "description": "keep.google.com wrapped by Electron to make it a desktop app. Generated with Nativefier (https://github.com/jiahaog/nativefier)",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "release:zip": "cd dist && zip -XTr google-keep-darwin-x64.zip \"Google Keep-darwin-x64\"",
+    "release:tag": "git tag v$npm_package_version -m \"release v$npm_package_version\"",
+    "release:push": "git push origin v$npm_package_version",
+    "release:create": "hub release create v$npm_package_version -a dist/google-keep-darwin-x64.zip",
+    "release": "run-s build release:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/homebrew-ndrpnt/google-keep-nativefied.git"
+  },
+  "keywords": [
+    "keep",
+    "google",
+    "electron",
+    "desktop",
+    "nativefier"
+  ],
+  "author": "ndrpnt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/homebrew-ndrpnt/google-keep-nativefied/issues"
+  },
+  "homepage": "https://github.com/homebrew-ndrpnt/google-keep-nativefied#readme",
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.16.4"
+  },
+  "dependencies": {
+    "nativefier": "^7.6.12"
+  }
+}

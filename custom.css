@@ -1,0 +1,12 @@
+header {
+    padding-top: 28px;
+    -webkit-app-region: drag;
+}
+
+a[href], [role='button'], input, label[for], select, button, .pointer {
+    -webkit-app-region: no-drag;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
