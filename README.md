@@ -15,7 +15,7 @@ Generated with [Nativefier](https://github.com/jiahaog/nativefier).
 ## Install
 
 ``` sh
-brew cask install homebrew-ndrpnt/google-keep-nativefied
+brew cask install homebrew-ndrpnt/formulae/google-keep-nativefied
 ```
 
 ## Build
