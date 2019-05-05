@@ -12,6 +12,12 @@ Generated with [Nativefier](https://github.com/jiahaog/nativefier).
   - Restart to fix
 - Main (left) menu scrollbar looks awful
 
+## Install
+
+``` sh
+brew cask install homebrew-ndrpnt/google-keep-nativefied
+```
+
 ## Build
 
 ``` sh
