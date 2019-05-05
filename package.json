@@ -8,10 +8,10 @@
     "build": "node index.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "release:zip": "cd dist && zip -XTr google-keep-darwin-x64.zip \"Google Keep-darwin-x64\"",
+    "release:zip": "cd dist && zip -XTr google-keep-v$npm_package_version-darwin-x64.zip \"Google Keep-darwin-x64\"",
     "release:tag": "git tag v$npm_package_version -m \"release v$npm_package_version\"",
     "release:push": "git push origin v$npm_package_version",
-    "release:create": "hub release create v$npm_package_version -m \"Release v$npm_package_version\" -a dist/google-keep-darwin-x64.zip",
+    "release:create": "hub release create v$npm_package_version -m \"Release v$npm_package_version\" -a dist/google-keep-v$npm_package_version-darwin-x64.zip",
     "release": "run-s build release:*"
   },
   "repository": {
